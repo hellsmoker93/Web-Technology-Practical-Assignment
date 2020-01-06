@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ticket Purchase</title>
+        <title>Buy Tickets</title>
+        <!--The link below is referrenced from font-awsome.com to use their font's which are predefined in their libraries-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-        body
-        {
-            font-family: sans-serif;
-        }
-        .container
-        {
-            background: black;
-            padding: 6px;
-            margin-top: 5%;
-            margin-left: 25%;
-            margin-right: 48%;    
-        }
-        .Ticket
-        {
-            margin-top: -21px;
-            background: whitesmoke;
-            border-radius: 10px;
-        }
-        .Ticket h1
-        {
-            margin-left: 20px;
-            padding-top: 10px;
-        }
-        .Ticket p
-        {
-            margin-left: 20px;
-            margin-top: -5%;
-            margin-bottom: 3px;
-            font-size: 13px;
-        }
-        .Ticket .cut1
-        {
-            color: white;
-            background: black;
-            padding-right: 12px;
-            margin-left: -5px;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
-        }
-        .Ticket .cut2
-        {
-            color: white;
-            background: black;
-            padding-right: 12px;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-        }
-        .Ticket .text
-        {
-            color: white;
-        }
-        .Ticket pre
-        {
-            margin-left: 20px;
-            font-weight: bolder;
-            font-size: 15px;
-        }
-        .Ticket label
-        {
-            font-size: 10px;
-            font-weight: normal;
-            color: darkgrey;
-        }
-        .Ticket input
-        {
-            width: 23px;
-            border-radius: 3px;
-            background: whitesmoke;
-        }
-        .Ticket hr
-        {
-            border: none;
-            border: 0.4px solid lightgrey;
-            margin-top: -5px;
-            margin-bottom: -5px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .Ticket input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
-        {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        .custom
-        {
-            font-size: 30px;
-            margin-left: 10px;
-        }
-        .custom img
-        {
-            width: 30%;
-        }
-        .custom button
-        {
-            margin-left: 80px;
-            margin-bottom: 20px;
-            margin-top: -10px;
-            width: 30%;
-            height: 30px;
-            color: white;
-            background: darkred;
-            border-radius: 6px;
-        }
+            body
+            {
+                font-family: sans-serif;
+                padding: 0;
+                margin: 0;
+            }
+            .container
+            {
+                background-color: #010203;
+                padding: 7px;
+                margin-left: 35%;
+                margin-right: 35%;
+                margin-top: 10%;
+            }
+            .content
+            {
+                background-color: rgb(235, 226, 226);
+                padding: 1px;
+                border-radius: 10px;
+            }
+            .content h1,h5
+            {
+                margin-left: 30px;
+            }
+            .content h5
+            {
+                margin-top: -3%;
+            }
+            .content .border
+            {
+                background-color: black;
+                float: left;
+                padding: 7px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                margin-left: -5px;
+                padding-right: 3px;
+            }
+            .content .border2
+            {
+                background-color: black;
+                float: right;
+                padding: 7px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                margin-right: -5px;
+                padding-left: 3px;
+            }
+            .content h4
+            {
+                margin-left: 30px;
+            }
+            .content .caption
+            {
+                font-size: 9px;
+                color: darkgray;
+            }
+            hr
+            {
+                margin-top: -7px;
+                margin-bottom: -7px;
+            }
+            .content .General-Admission, .VIP-Ticket
+            {
+                float: right;
+                margin-top: -40px;
+                margin-left: 20px;  
+            }
+            .content .General-Admission input, .VIP-Ticket input
+            {
+                margin-right: -130px;
+                width: 25%;
+                border: 1px solid grey;;
+                border-radius: 3px;
+                background: rgb(235, 226, 226);
+            }
+            .content input::-webkit-inner-spin-button, input::-webkit-outer-spin-button
+            {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            .footer
+            {
+                border: 0.7px solid grey;
+                border-radius: 5px;
+                padding-top: 15px;
+                margin-left: 30px;
+                background: lightgray;
+            }
+            .footer img
+            {
+                width: 30%;
+                margin-left: 5%;
+                margin-right: 5px;
+            }
+            
+            .footer .fa-cc-amex, .fa-cc-visa, .fa-cc-mastercard, .fa-lock
+            {
+                font-size: 30px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 5px;
+                color: grey;
+            }
+            .content button
+            {
+                cursor: pointer;
+                margin-Right: 20px;
+                padding: 8px;
+                font-weight: bolder;
+                background: darkred;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                float: right;
+            }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="Ticket">
+            <div class="content">
                 <h1><i class="fa fa-ticket"></i> Buy Tickets</h1>
-                <p>No hidden fees. What you see is what you pay.</p>
-                <span class="cut1"></span><span class="text">- ---------------------------------------- ---------------------</span><span class="cut2"> </span>
-                <pre>General Admission          $23.32  <input type="number"  ></pre>
+                <h5>No hidden fees, what you see is what you pay</h5>
+                <label class="border"></label>             <label class="border2"></label>
+                <br>
+                <h4>General Admission</h4>  <label class="General-Admission"><strong>$23.32</strong> <input type="number"></label>
                 <hr>
-                <pre>VIP Ticket <label>WHAT'S INCLUDED?        </label>$23.32  <input type="number"></pre>
-                <label class="custom">
-                    <span class="custom"><i class="fa fa-lock"></i> <img src="payment-methods.jpg"></span> <button><i class="fa fa-shopping-cart"></i> Checkout</button>
+                <h4>VIP Ticket <label class="caption">WHAT'S INCLUDED?</label></h4> <label class="VIP-Ticket"><strong>$33.87</strong> <input type="number"></label>
+                <label class="footer">
+                    <!--The class defined below are nothing but font's which are predefined in the fontawsome library files-->
+                <i class="fa fa-lock"></i><i class="fa fa-cc-visa"></i><i class="fa fa-cc-mastercard"></i><i class="fa fa-cc-amex"></i>
                 </label>
+                <button><i class="fa fa-shopping-cart"></i> Checkout</button>
+                <p></p>
             </div>
         </div>
     </body>
